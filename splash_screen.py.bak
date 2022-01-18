@@ -1,0 +1,35 @@
+print()
+HANGMAN_ASCII_ART = """Welcome to the game Hangman
+  _    _                                         
+ | |  | |                                        
+ | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+ |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+ | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+ |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                      __/ |                      
+                     |___/"""
+
+MAX_TRIES = 6
+print(HANGMAN_ASCII_ART)
+print(MAX_TRIES)
+print()
+
+# lower casing the current user guess
+current_guess = input("Guess a letter: ")
+current_guess = current_guess.lower()
+print(current_guess)
+
+# receving a user input and printing it as - - - 
+full_word = input("Please enter a word: ")  # original input 
+length_of_string = len(full_word)  # length of the original input
+secret_string = ("- " * length_of_string)  # creating string with same number of - - - as the original input
+print(secret_string)
+
+
+
+
+
+
+# leftovers from previous excercise:
+# import random
+# num_of_tries = random.randint(5, 10)
